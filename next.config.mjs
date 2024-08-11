@@ -6,7 +6,7 @@ const withNextra = nextra({
 });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = { basePath: "/physicrypt" };
 
 // Combine Nextra configuration with your existing Next.js config
 const combinedConfig = withNextra({
