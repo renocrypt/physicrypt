@@ -36,14 +36,13 @@ jobs:
 
       - name: 'Setup & Build'
         run: |
-          cd docs/
           pnpm install
           pnpm build
 
       - name: 'upload'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs/out
+          path: ./out
 
       - name: Deploy to GitHub Pages
         id: deployment
